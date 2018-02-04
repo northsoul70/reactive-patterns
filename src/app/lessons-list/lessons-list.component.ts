@@ -17,7 +17,7 @@ export class LessonsListComponent implements Observer, OnInit {
     }
 
     ngOnInit(): void {
-      store.lessonsList$.subscribe(this);
+      store.subscribe(this);
     }
 
     next(data: Lesson[]) {
